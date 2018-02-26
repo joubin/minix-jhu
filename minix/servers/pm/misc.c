@@ -426,3 +426,8 @@ int do_getrusage()
 	return sys_datacopy(SELF, (vir_bytes)&r_usage, who_e,
 		m_in.m_lc_pm_rusage.addr, (vir_bytes) sizeof(r_usage));
 }
+
+int do_joubin(){
+   printf("This is the sys call\n");
+   return 0;
+}
